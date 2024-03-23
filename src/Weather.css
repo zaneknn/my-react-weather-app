@@ -2,55 +2,53 @@ body {
   font-family: arial, sans-serif;
 }
 
-.Weather {
+.WeatherInfo {
+  font-family: arial, sans-serif;
   border: 1px solid #dadde1;
-  color: rgb(135, 135, 135);
   padding: 16px;
   border-radius: 4px;
+  color: rgb(135, 135, 135);
 }
 
-.Weather h1 {
+.WeatherInfo h1 {
   font-size: 24px;
   font-weight: 100;
-  line-height: 29px;
   margin: 20px 0 0 0;
+  line-height: 29px;
 }
-.Weather ul {
+
+.WeatherInfo ul {
   margin: 0;
   padding: 0;
 }
-.Weather li {
+
+.WeatherInfo li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
   list-style: none;
 }
 
-.forecast {
-  padding: 12px 16px 16px 0;
-}
-.temperature {
-  font-family: Google Sans, arial, sans-serif;
+.WeatherInfo .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 64px;
+  margin-left: 5px;
   font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 0;
-  line-height: 56px;
-  color: rgb(19, 18, 18);
+  margin-left: 10px;
 }
-.unit {
-  color: rgb(0, 0, 0);
-  line-height: 24px;
+
+.WeatherInfo .unit {
+  color: rgb(33, 33, 33);
   font-size: 16px;
-  margin-top: 6px;
-  vertical-align: top;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
 }
-.tempUnit {
-  display: inline-block;
-  vertical-align: top;
-}
-.Weather img {
-  height: 60px;
-  margin-top: unset;
-  vertical-align: top;
-  width: 60px;
+.WeatherInfo canvas {
+  vertical-align: bottom;
+  margin-top: 5px;
+  margin-right: 5px;
 }

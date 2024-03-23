@@ -15,7 +15,7 @@ export default function Weather(props) {
       city: response.data.name,
       description: response.data.weather[0].description,
       humidity: Math.round(response.data.main.humidity),
-      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
     });
   }
@@ -35,8 +35,8 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
-        <form onSubmit={handleSubmit}>
+      <div className="Weather ">
+        <form onSubmit={handleSubmit} className="mb-3">
           <div className="row">
             <div className="col-9">
               <input
